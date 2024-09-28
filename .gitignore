@@ -1,42 +1,38 @@
-.gradle
-build/
-!gradle/wrapper/gradle-wrapper.jar
-!**/src/main/**/build/
-!**/src/test/**/build/
+# Gradle build folder
+/build/
+.gradle/
 
-### IntelliJ IDEA ###
-.idea/modules.xml
-.idea/jarRepositories.xml
-.idea/compiler.xml
-.idea/libraries/
-*.iws
+# IntelliJ IDEA files
+.idea/
 *.iml
-*.ipr
 out/
-!**/src/main/**/out/
-!**/src/test/**/out/
 
-### Eclipse ###
-.apt_generated
-.classpath
-.factorypath
+# Log files
+*.log
+
+# Target folder for compiled classes and reports
+/target/
+
+# Gradle wrapper binaries
+gradlew
+gradlew.bat
+
+# Serenity reports
+/target/site/
+.serenity/
+
+# Dependency cache
+.gradle/
+build/
+
+# Eclipse specific files
 .project
-.settings
-.springBeans
-.sts4-cache
-bin/
-!**/src/main/**/bin/
-!**/src/test/**/bin/
+.classpath
+.csettings
+.settings/
 
-### NetBeans ###
-/nbproject/private/
-/nbbuild/
-/dist/
-/nbdist/
-/.nb-gradle/
-
-### VS Code ###
-.vscode/
-
-### Mac OS ###
+# Mac specific files
 .DS_Store
+
+# Windows specific files
+Thumbs.db

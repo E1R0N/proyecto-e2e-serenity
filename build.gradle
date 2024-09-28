@@ -1,19 +1,70 @@
-plugins {
-    id("java")
-}
-
-group = "org.example"
-version = "1.0-SNAPSHOT"
+defaultTasks 'clean', 'downloadChromeDriver', 'test', 'aggregate'
 
 repositories {
     mavenCentral()
 }
 
-dependencies {
-    testImplementation(platform("org.junit:junit-bom:5.10.0"))
-    testImplementation("org.junit.jupiter:junit-jupiter")
+buildscript {
+    repositories {
+        maven {
+            url "https://plugins.gradle.org/m2/"
+        }
+    }
+    dependencies {
+        classpath "net.serenity-bdd:serenity-gradle-plugin:3.3.0"
+    }
 }
 
-tasks.test {
-    useJUnitPlatform()
+apply plugin: 'java'
+apply plugin: 'eclipse'
+apply plugin: 'idea'
+apply plugin: "net.serenity-bdd.serenity-gradle-plugin"
+
+sourceCompatibility = '1.8'
+targetCompatibility = '1.8'
+
+ext {
+    slf4jVersion = '1.7.32'
+    serenityCoreVersion = '3.6.23'
+    serenityCucumberVersion = '3.6.23'
+    junitVersion = '4.13.1'
+    assertJVersion = '3.23.1'
+    logbackVersion = '1.2.10'
 }
+
+dependencies {
+    implementation 'org.seleniumhq.selenium:selenium-java:4.8.3'
+    implementation 'org.seleniumhq.selenium:selenium-chrome-driver:4.8.3'
+    implementation 'io.github.bonigarcia:webdrivermanager:5.6.0'
+    implementation "org.slf4j:slf4j-api:${slf4jVersion}"
+    implementation "ch.qos.logback:logback-classic:${logbackVersion}"
+
+    testImplementation "net.serenity-bdd:serenity-core:${serenityCoreVersion}",
+            "net.serenity-bdd:serenity-cucumber:${serenityCucumberVersion}",
+            "net.serenity-bdd:serenity-screenplay:${serenityCoreVersion}",
+            "net.serenity-bdd:serenity-screenplay-webdriver:${serenityCoreVersion}",
+            "net.serenity-bdd:serenity-ensure:${serenityCoreVersion}",
+            "junit:junit:${junitVersion}",
+            "org.junit.platform:junit-platform-launcher:1.8.2",
+            "org.junit.jupiter:junit-jupiter-engine:5.8.2",
+            "org.junit.vintage:junit-vintage-engine:5.8.2",
+            "org.assertj:assertj-core:${assertJVersion}"
+}
+
+test {
+    useJUnitPlatform() // Necesario para Gradle 7.6.1 para habilitar JUnit
+    testLogging.showStandardStreams = true
+    systemProperties System.getProperties()
+}
+
+serenity {
+    // Especifica el paquete raíz de las pruebas JUnit para los reportes de Serenity
+    testRoot = "starter"
+    // Especifica el directorio raíz de los archivos de características de Cucumber
+    requirementsDir = "src/test/resources/features"
+}
+
+
+gradle.startParameter.continueOnFailure = true
+
+test.finalizedBy(aggregate)
