@@ -18,13 +18,27 @@ Este repositorio contiene un proyecto de pruebas automatizadas end-to-end (E2E) 
 - **Gradle 7.6.1** o superior.
 - **ChromeDriver** compatible con la versión de Google Chrome utilizada (v129.0.6668.70).
 
-## Cómo Ejecutar las Pruebas:
-1. Clona el repositorio:
+## Cómo Ejecutar el Proyecto
+### 1. Clona el repositorio:
    ```bash
    git clone https://github.com/tuusuario/proyecto-e2e-serenity.git
-2. Ejecuta el build.gradle
-  ```bash
-  ./gralew clean build
-3. Ejecuta las pruebas usando Gradle
-  ```bash
-  ./gralew clean test
+  ```
+### 2. Ejecutar el archivo `build.gradle`:
+El archivo `build.gradle` contiene la configuración de dependencias y tareas necesarias para ejecutar las pruebas.
+
+Para descargar todas las dependencias y compilar el proyecto, ejecuta el siguiente comando desde la raíz del proyecto:
+```bash
+./gradlew build
+```
+Este comando también verificará la integridad del proyecto y generará los artefactos necesarios.
+### 3. Ejecutar las pruebas con Gradle:
+Una vez que el proyecto esté compilado y listo, puedes ejecutar todas las pruebas automatizadas con el siguiente comando:
+```bash
+./gradlew clean test
+```
+El comando clean asegura que se eliminen los archivos generados previamente, y el comando test ejecuta todas las pruebas de Cucumber integradas con Serenity. Después de la ejecución, se generarán reportes automáticos.
+### 4. Ver los reportes de pruebas:
+Después de ejecutar las pruebas, puedes visualizar los reportes detallados generados por Serenity en la siguiente ruta:
+```bash
+target/site/serenity/index.html
+```
