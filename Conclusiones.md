@@ -1,25 +1,12 @@
-# Hallazgos y Conclusiones del Proyecto API Rest con Karate, Cucumber y Gradle
+# Hallazgos y Conclusiones del Proyecto E2E con Serenity, Cucumber y Gradle
 
-1. **Automatización de Pruebas REST:**
-   El uso de Karate Framework facilita la creación de pruebas automatizadas para servicios API REST. Este framework permite realizar pruebas de manera sencilla y eficiente, integrando Cucumber para una mejor legibilidad.
-
-2. **Integración con Cucumber:**
-   La integración con Cucumber permite utilizar el lenguaje Gherkin, lo que hace que las pruebas sean más accesibles y legibles para todos los miembros del equipo. Esto fomenta una colaboración más cercana entre desarrolladores y testers.
-
-3. **Modularidad y Escalabilidad:**
-   La arquitectura del proyecto sigue una estructura modular, lo que mejora la organización y el mantenimiento del código. La separación clara entre runners, definiciones de pruebas y configuraciones permite que el proyecto pueda escalar fácilmente a medida que se agregan más pruebas.
-
-4. **JDK y Herramientas:**
-   El uso de JDK 1.8 y Gradle 7.6.1 asegura que las pruebas sean compatibles con entornos antiguos y nuevos. También se recomienda tener configuradas correctamente las variables de entorno, especialmente `JAVA_HOME`, para asegurar el correcto funcionamiento del proyecto.
-
-5. **Dependencias:**
-   El proyecto hace un uso intensivo de varias bibliotecas como Apache Commons, Google Guava y Noggit para optimizar las pruebas y manejar eficientemente archivos JSON y otras operaciones. Esto proporciona una base sólida para pruebas más complejas.
-
-6. **Informes Automáticos:**
-   Karate genera informes detallados automáticamente después de cada ejecución de pruebas, lo que permite visualizar fácilmente los resultados y errores. Estos informes se encuentran en `target/cucumber-html-reports`.
-
-7. **Drivers y Configuración:**
-   Se destaca la importancia de la configuración adecuada de drivers (especialmente si se interactúa con servicios externos) y la correcta modificación del archivo `karate-config.js` para asegurar que las pruebas se ejecuten sin problemas.
+1. El proyecto está bien estructurado para pruebas E2E de aplicaciones web utilizando un enfoque modular que separa las responsabilidades entre tareas, pasos, runners y mapeos de UI.
+2. El patrón Screenplay facilita la creación de pruebas mantenibles y reutilizables, destacando la interacción de los actores en las pruebas.
+3. La automatización de la navegación y la organización clara de las pruebas permiten que el proyecto sea fácilmente escalable a medida que crece.
+4. Serenity BDD proporciona reportes detallados después de cada ejecución, lo que ayuda a una rápida identificación de fallos.
+5. La configuración incluye el uso de ChromeDriver compatible con Google Chrome versión 129.0.6668.70, asegurando que las pruebas se ejecuten correctamente en la versión correspondiente del navegador.
+6. El uso de JDK 1.8, Gradle 7.6.1, y Cucumber permite la integración efectiva con herramientas de pruebas comunes en la industria.
+7. La estructura del proyecto está diseñada para facilitar su mantenimiento a largo plazo, permitiendo agregar nuevos casos de prueba sin afectar la legibilidad y la lógica existente.
 
 ## Conclusión
-En general, el proyecto proporciona una base sólida para la automatización de pruebas REST con un enfoque en la modularidad, escalabilidad y la facilidad de uso mediante Gherkin y Karate Framework.
+Este proyecto provee una base sólida para la automatización de pruebas web, aprovechando la modularidad y los reportes automáticos de Serenity, así como la estructura clara de Cucumber para la definición de pruebas BDD.
