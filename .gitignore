@@ -6,7 +6,6 @@
 .idea/
 *.iml
 out/
-
 # Log files
 *.log
 
@@ -22,6 +21,7 @@ gradlew.bat
 .serenity/
 
 # Dependency cache
+.gradle/
 build/
 
 # Eclipse specific files
