@@ -27,7 +27,7 @@ Para configurar y ejecutar el proyecto en tu máquina local, asegúrate de tener
 ## Cómo Ejecutar el Proyecto
 Para descargar las dependencias y compilar el proyecto, sigue los siguientes pasos:
 
-### 1. Clona el repositorio:
+### 1. Clonar el repositorio:
    ```bash
   git clone https://github.com/E1R0N/proyecto-e2e-serenity.git
   cd proyecto-e2e-serenity
