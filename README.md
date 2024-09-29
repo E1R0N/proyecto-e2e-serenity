@@ -11,7 +11,7 @@ Para configurar y ejecutar el proyecto en tu máquina local, asegúrate de tener
 - **Gradle:** versión 7.6.1 (se puede utilizar el wrapper proporcionado)
 - **Google Chrome:** versión 129.0.6668.70 (asegúrate de tener ChromeDriver compatible)
 
-##Tecnologías Utilizadas:
+## Tecnologías Utilizadas:
 - **Serenity BDD:** Framework para la escritura y gestión de pruebas con reportes detallados y fáciles de leer.
 - **Cucumber:** Permite la escritura de casos de prueba en un formato BDD utilizando el lenguaje Gherkin.
 - **Screenplay:** Un patrón de diseño de pruebas centrado en las interacciones de los actores, que facilita la escritura de pruebas altamente mantenibles y reutilizables.
@@ -23,15 +23,6 @@ Para configurar y ejecutar el proyecto en tu máquina local, asegúrate de tener
 - **Escalabilidad**: Estructura diseñada para crecer a medida que se agregan más pruebas y funcionalidades.
 - **Automatización de Navegación**: Manejo de la lógica de navegación entre diferentes páginas o secciones de la aplicación.
 - **Serenity Reports**: Reportes automáticos y detallados de cada ejecución de prueba, generados en `target/site/serenity`.
-
-## Prerequisitos
-Para configurar y ejecutar el proyecto en tu máquina local, asegúrate de tener instaladas las siguientes dependencias:
-
-## Sistema Operativo: Windows 10
-- **IDE:** IntelliJ IDEA versión 2023.1
-- **JDK:** versión 1.8 (debe estar configurado en la variable de entorno JAVA_HOME)
-- **Gradle:** versión 7.6.1 (se puede utilizar el wrapper proporcionado)
-- **Google Chrome:** versión 129.0.6668.70 (asegúrate de tener ChromeDriver compatible)
 
 ## Cómo Ejecutar el Proyecto
 Para descargar las dependencias y compilar el proyecto, sigue los siguientes pasos:
