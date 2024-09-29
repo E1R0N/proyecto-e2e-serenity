@@ -2,7 +2,7 @@
 
 Este repositorio contiene un proyecto de pruebas automatizadas end-to-end (E2E) utilizando **Serenity BDD**, **Cucumber** y **Gradle**. El objetivo principal es proporcionar una base sólida para realizar pruebas automatizadas de flujo completo en aplicaciones web, manteniendo una arquitectura modular y fácilmente escalable.
 
-##Prerequisitos
+## Prerequisitos
 Para configurar y ejecutar el proyecto en tu máquina local, asegúrate de tener instaladas las siguientes dependencias:
 
 - **Sistema Operativo:** Windows 10 o Windows 11
