@@ -21,7 +21,7 @@ Este repositorio contiene un proyecto de pruebas automatizadas end-to-end (E2E) 
 ## Cómo Ejecutar el Proyecto
 ### 1. Clona el repositorio:
    ```bash
-   [git clone https://github.com/tuusuario/proyecto-e2e-serenity.git](https://github.com/E1R0N/proyecto-e2e-serenity.git)
+   https://github.com/E1R0N/proyecto-e2e-serenity.git
   ```
 ### 2. Ejecutar el archivo `build.gradle`:
 El archivo `build.gradle` contiene la configuración de dependencias y tareas necesarias para ejecutar las pruebas.
