@@ -5,7 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f998367e-8eb2-4aae-a698-8b0781dfa208" name="Changes" comment=".idea update">
-      <change beforePath="$PROJECT_DIR$/Conclusiones.md" beforeDir="false" afterPath="$PROJECT_DIR$/Conclusiones.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/tasks/AddProducts.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/tasks/AddProducts.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/userInterfaces/PurchaseProductsInterfaces.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/userInterfaces/PurchaseProductsInterfaces.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,16 +55,16 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "history": [
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;history&quot;: [
     {
-      "state": "OPEN"
+      &quot;state&quot;: &quot;OPEN&quot;
     }
   ],
-  "lastFilter": {
-    "state": "OPEN"
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;
   }
-}]]></component>
+}</component>
   <component name="GithubPullRequestsUISettings">{
   &quot;selectedUrlAndAccountId&quot;: {
     &quot;url&quot;: &quot;https://github.com/E1R0N/proyecto-e2e-serenity.git&quot;,
@@ -81,30 +83,30 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Gradle.Build proyecto-base-serenity.executor": "Run",
-    "Gradle.TestRunner (1).executor": "Run",
-    "Gradle.TestRunner (2).executor": "Run",
-    "Gradle.TestRunner.executor": "Run",
-    "Gradle.proyecto-base-serenity [:io.cucumber.core.cli.Main.main()].executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SONARLINT_PRECOMMIT_ANALYSIS": "true",
-    "git-widget-placeholder": "master",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/matta/IdeaProjects/proyecto-api-karate/pom.xml",
-    "onboarding.tips.debug.path": "C:/Users/matta/IdeaProjects/proyecto-base-serenity/src/main/java/org/example/Main.java",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "reference.settingsdialog.project.gradle"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Gradle.Build proyecto-base-serenity.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.TestRunner (1).executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.TestRunner (2).executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.TestRunner.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.proyecto-base-serenity [:io.cucumber.core.cli.Main.main()].executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SONARLINT_PRECOMMIT_ANALYSIS&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/matta/IdeaProjects/proyecto-api-karate/pom.xml&quot;,
+    &quot;onboarding.tips.debug.path&quot;: &quot;C:/Users/matta/IdeaProjects/proyecto-base-serenity/src/main/java/org/example/Main.java&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settingsdialog.project.gradle&quot;
   },
-  "keyToStringList": {
-    "com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File": [
-      "Properties"
+  &quot;keyToStringList&quot;: {
+    &quot;com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File&quot;: [
+      &quot;Properties&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="Gradle.TestRunner (1)">
     <configuration name="Scenario: Inicio de Sesión y Compra de Productos" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
@@ -290,7 +292,15 @@
       <option name="project" value="LOCAL" />
       <updated>1727634310574</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary=".idea update">
+      <option name="closed" value="true" />
+      <created>1727634381185</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1727634381185</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="UnknownFeatures">
